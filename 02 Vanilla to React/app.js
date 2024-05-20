@@ -8,6 +8,7 @@ const appDomElement = document.getElementById('app')
 const root = ReactDOM.createRoot(appDomElement)
 
 // Puedes renderizar texto pero no puedes renderizar elementos de nivel superior a un elemento raíz de esta forma, siempre debemos crear primero el elemento y luego renderizarlo
+
 const button = React.createElement('button', { "data-id": 123 }, 'Button 1')
 const button2 = React.createElement('button', { "data-id": 456 }, 'Button 2')
 const button3 = React.createElement('button', { "data-id": 789 }, 'Button 3')
@@ -23,13 +24,11 @@ root.render(app)
 //* Para solucionar esto utilizaremos JSX en el siguiente ejemplo, que es una forma más declarativa de escribir React
 //* JSX es una extensión de JavaScript que permite escribir HTML en JavaScript usando XML
 
-/* JSX
-<React.Fragment>
-    <button data-id="123">Button 1</button>
-    <button data-id="456">Button 2</button>
-    <button data-id="789">Button 3</button>
-</React.Fragment>
-*/
+/* <React.Fragment>
+    <button data-id='123'>Button 1</button>
+    <button data-id='456'>Button 2</button>
+    <button data-id='789'>Button 3</button>
+</React.Fragment> */
 
 //? ¿Quién se encarga de convertir el código JSX a código JavaScript?
 

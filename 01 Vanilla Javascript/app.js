@@ -1,6 +1,6 @@
 //Vanilla JavaScript
 
-//Recuperamos los botones
+//Recuperamos los botone
 
 const buttons = document.querySelectorAll('button');
 
